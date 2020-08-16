@@ -1,4 +1,4 @@
-package com.immortalalexsan.oscilloscope.presentation.components
+package com.immortalalexsan.oscilloscope
 
 import android.content.Context
 import android.graphics.Canvas
