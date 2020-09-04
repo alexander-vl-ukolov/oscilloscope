@@ -1,0 +1,16 @@
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+
+    def groupProjectID = 'com.immortalalexsan.oscilloscope'
+    def artifactProjectID = 'android-oscilloscope'
+    def publishVersionID = '1.1'
+
+    userOrg = 'immortalalexsan'
+    repoName = 'oscilloscope'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Oscilloscope view for android applications.'
+    website = 'https://github.com/alexander-vl-ukolov/oscilloscope'
+}

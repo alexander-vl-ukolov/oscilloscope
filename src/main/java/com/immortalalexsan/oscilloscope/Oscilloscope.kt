@@ -130,6 +130,7 @@ class Oscilloscope @JvmOverloads constructor(
     init {
         setZOrderOnTop(true)
         holder.addCallback(this)
+        holder.setFormat(PixelFormat.TRANSPARENT)
     }
 
     override fun setBackgroundColor(color: Int) {
@@ -146,7 +147,6 @@ class Oscilloscope @JvmOverloads constructor(
     }
 
     override fun surfaceCreated(holder: SurfaceHolder) {
-        holder.setFormat(PixelFormat.TRANSPARENT)
         paintJob = GlobalScope.launch {
             while (isActive) {
                 val canvas = holder.lockCanvas() ?: continue
