@@ -4,7 +4,7 @@ publish {
 
     def groupProjectID = 'com.immortalalexsan.oscilloscope'
     def artifactProjectID = 'android-oscilloscope'
-    def publishVersionID = '1.1'
+    def publishVersionID = '1.2'
 
     userOrg = 'immortalalexsan'
     repoName = 'oscilloscope'
